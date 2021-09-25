@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar  {
+  width: 0.7vw;
+  /* width: 8px; */
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ff6666, #1111ec);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: #18191a;
+}
+
+:root {
+  --main-color: black;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.main-container {
+  display: flex;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+/************* left ccontainer starts **************/
+.left-ctn {
+  flex: basis 30%;
+  height: 100vh;
+  width: 350px;
+  border-right: 1px solid gray;
+  position: sticky;
+  top: 0;
+}
+.left-ctn .navbar li {
+  padding: 0.6em 0px 0.6em 0;
+  border-radius: 40px;
+}
+.left-ctn .navbar li:hover {
+  background-color: #34344c;
+  cursor: pointer;
+}
+.left-ctn .navbar i {
+  margin-right: 1.5em;
+  height: 0.5em;
+  width: 0.5em;
+}
+.left-ctn .navbar a {
+  color: white;
+  padding-left: 2.7em;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.twt-btn button {
+  background-color: #1d9bf0;
+  border: none;
+  padding: 13px 0px;
+  border-radius: 25px;
+  width: 210px;
+  color: #fff;
+  font-size: 1em;
+  margin: 20px 0 20px 40px;
+}
+.twt-btn button:hover{
+  cursor: pointer;
+  background-color: #0a93ee;
+}
+.user {
+  display: flex;
+  color: white;
+  margin: 2em 0 0 2.7em;
+}
+.user .user-profile img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user .more {
+  margin: 15px 0px 0px 50px;
+}
+
+/******************** center container starts *********************/
+.center-ctn {
+  flex-basis: 50%;
+  color: white;
+}
+.center-ctn .nav_heading {
+  padding: 15px;
+  border-bottom: 1px solid gray;
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+.center-ctn .nav_heading ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/****** user heading tweet starts *****/
+.user_tweet{
+  border-bottom: 1px solid gray;
+}
+.user_tweet .user_heading{
+  display: flex;
+  margin: 0.5em 0 0 0.8em;
+}
+.user_heading img{
+  border-radius: 50%;
+}
+.user_heading input{
+   background-color: var(--main-color);
+   border: none;
+   outline: none;
+   padding: 15px 0px 0px 15px;
+   font-size: 1.2em;
+}
+.tweet_option{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px 0px 15px;
+}
+.tweet_option .tweet_opt_links ul{
+  display: flex;
+  padding-left: 3em;
+}
+.tweet_option .tweet_opt_links ul li{
+  margin-left: 20px;
+}
+.tweet_option .tweet_opt_links ul li i{
+  color: #1d9bf0;
+}
+.tweet_option .twt-btn button{
+  margin-top: -10px;
+  padding: 5px 0px;
+  width: 90px;
+}
+
+/****** tweeter posts starts *****/
+.tweet_posts{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.tweet_posts .user_profile{
+  display: flex;
+}
+.user_profile img{
+  border-radius: 50%;
+  margin-right: 10px;
+}
+span{
+  color:gray;
+}
+/********* post start ****/
+.tweet_post_container{
+  border-bottom: 1px solid gray;
+padding-bottom: 15px;
+}
+.post{
+  margin-left: 5.5em;
+  width: 500px;
+  font-size: 0.9em;
+}
+.post ,.post_description p{
+  text-align: justify;
+  /* word-spacing: 0.01em; */
+}
+.post .border{
+  border: 1px solid gray;
+  border-radius: 1.5em;
+}
+.post_content{
+  padding: 0px 15px 15px 15px;
+}
+.post_content p{
+  color: gray;
+}
+.post img{
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+.post_react{
+  margin-top: 15px;
+}
+.post_react ul{
+   display: flex;
+   justify-content: space-around;
+}
+.post_react ul li i{
+  color: gray;  
+}
+.post_react ul li i:hover{
+  color: #33ff77;  
+}
+
+
+
+/*********************** right container starts *****************/
+.right-ctn {
+  /* background-color: #1971ad; */
+  flex-basis: 35%;
+  color: white;
+  height: 100vh;
+  width: 300px;
+  overflow-x: hidden;
+  position: sticky;
+  top: 0;
+  border-left: 1px solid gray;
+  padding-left: 25px;
+}
+.search input {
+  background-color: #15181c;
+  padding: 13px 150px 13px 15px;
+  margin-top: 15px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  font-size: 0.9em;
+}
+.search {
+  position: fixed;
+  background-color: black;
+  width: 375px;
+  padding-bottom: 15px;
+}
+/* trends starts */
+.heading-trends ul {
+  display: flex;
+}
+.heading-trends ul li i {
+  margin-left: 170px;
+}
+.heading-trends ul li {
+  padding-left: 15px;
+}
+.trends {
+  background-color: #15181c;
+  width: 360px;
+  padding: 15px 0px 0px 0px;
+  border-radius: 15px;
+  margin-top: 80px;
+}
+.trends-name {
+  display: flex;
+  padding: 5px 0px 5px 15px;
+}
+.trends .trends-name:hover,
+.follow .user:hover {
+  background-color: #2a313a;
+  cursor: pointer;
+}
+.trends-name .right-more {
+  margin: 15px 0 0 110px;
+}
+.trends-name .right-more2 {
+  margin: 15px 0 0 170px;
+}
+.trends-name .right-more3 {
+  margin: 15px 0 0 200px;
+}
+.show {
+  margin-top: 15px;
+  padding: 15px 0px 15px 15px;
+}
+.show:hover {
+  background-color: #2a313a;
+  border-end-start-radius: 15px;
+  border-end-end-radius: 15px;
+  cursor: pointer;
+}
+.show a {
+  text-decoration: none;
+  color: #1971ad;
+}
+/* trends ends */
+.follow {
+  background-color: #15181c;
+  margin-top: 15px;
+  /* padding: 15px 0px 15px 15px; */
+  border-radius: 15px;
+  width: 360px;
+}
+.follow .follow-heading {
+  padding: 15px 0px 15px 15px;
+}
+.follow .user {
+  margin-left: -5px;
+  padding: 5px 0px 5px 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.user .more button {
+  color: #0f1419;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+.user .more .btn1 {
+  margin-left: 25px;
+}
+.user .more .btn3 {
+  margin-left: 40px;
+}
